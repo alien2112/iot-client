@@ -1,3 +1,4 @@
+import Dashboard from "./Pages/Dashboard/Dashboard";
 import Login from "./components/auth/login";
 import Register from "./components/auth/register";
 
@@ -24,6 +25,10 @@ function App() {
     {
       path: "/home",
       element: <Home />,
+    },
+    {
+      path: "/dashboard",
+      element: <Dashboard />,
     },
   ];
   let routesElement = useRoutes(routesArray);
